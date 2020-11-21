@@ -34,7 +34,7 @@ RUN \
 RUN \
   echo "**** install plex_autoscan ****" && \
   apk --quiet --no-cache --no-progress add git && \
-  git clone --depth 1 --single-branch --branch master https://github.com/doob187/plex_autoscan /opt/plex_autoscan && \
+  git clone --depth 1 --single-branch --branch master https://github.com/l3uddz/plex_autoscan /opt/plex_autoscan && \
   apk --quiet --no-cache --no-progress del git
 
 ENV PATH=/opt/plex_autoscan:${PATH}
